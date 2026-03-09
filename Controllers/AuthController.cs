@@ -26,6 +26,7 @@ public class AuthController : ControllerBase
         return Ok(new { adminExists });
     }
 
+
     [HttpPost("create-admin")]
     public IActionResult CreateAdmin([FromBody] RegisterDto dto)
     {
